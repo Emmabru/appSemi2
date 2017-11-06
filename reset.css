@@ -1,0 +1,242 @@
+/* Downloaded from http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/ */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+/* 
+	colors 	46211A darkest. brown red
+			693D3D lighter brown purple
+			BA5536	orangei
+			A43820 Redy
+			FFFFFF white
+*/
+:focus {
+	outline: 0;
+}
+
+header {
+    padding: 1em;
+    color: gray;
+    background-color: whitesmoke;
+    clear: left;
+    text-align: left;
+	font-size: 0.8em;
+}
+
+
+body {
+	background: #BA5536;
+	text-align: center;
+	padding: 1em;
+	font-family: quicksand;
+}
+
+/*headline on site*/
+h1 {
+	font-size: 3em;
+	color: #46211A;
+    font-family: quicksand;
+    padding: 15px;
+}
+
+/*recipename, calender ..*/
+h2 {
+	font-size: 1.5em;
+	color: #693D3D; 
+	margin-top: 20px;
+	text-align: center;
+}
+
+/*headlines in sections, text-headlines*/
+h3 {
+	font-size: 1em;
+	color: #693D3D; 
+	margin-top: 30px;
+	text-align: left;
+}
+
+/* subheadline to pages, breadtext*/
+p {
+	font-size: 0.9em;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+
+ul {
+    font-family: quicksand; 
+}
+
+.menu {
+    margin-left: 35%;
+    margin-top: 3%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+}
+.menu a{
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu li {
+    float: left;
+}
+
+li a:hover {
+    background-color: #A43820;
+}
+li a:hover:not(.active) {
+  
+}
+
+.active {
+    background-color: #A43820;
+}
+
+
+section{
+    margin-left: 10%;
+	margin-top: 140px;
+	margin-right: 10%;
+    padding: 1em;
+    overflow: hidden;
+    background-color:  white;
+    border: 2px solid #A43820;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+/* Ingredients list element*/
+.ingredienser{
+    float: left;
+    width: 40%;
+    color: #46211A;
+    text-align: left;
+    padding: 20px;
+    font-size: 0.95em;    
+}
+
+
+.meal-pic {
+    width: 50%;
+	float: center;
+}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 10px 25px;
+    background: #46211A;
+    text-align: center;
+    width: 84.5%;
+    margin: 0 50px;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0 50px;
+    padding: 10px 25px;
+    background-color:#A43820;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #46211A;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+   
+    padding: 10px 25px;
+    background: whitesmoke;
+    margin: 0 50px;
+  
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    height: 50px;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:#46211A;
+    border: 1px solid;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #A43820;
+    color: white !important
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
