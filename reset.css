@@ -70,6 +70,7 @@ h3 {
     font-size: 1em;
     color: #693D3D; 
     text-align: left;
+    padding-bottom: 10px;
 }
 
 /* subheadline to pages, breadtext*/
@@ -126,6 +127,8 @@ section{
     text-align: justify;
 }
 
+
+/* RECIPE SITE START *************************/
 .recipe-top-section{
     margin-left: 5%;
     width: 100%;
@@ -136,10 +139,11 @@ section{
 /* Ingredients list element*/
 .ingredienser{
     float: left;
-    width: 40%;
+    width: 38%;
     color: #46211A;
     text-align: left;
-    font-size: 0.95em;    
+    font-size: 0.95em;
+    padding-right: 20px;
 }
 
 .meal-pic {
@@ -150,6 +154,23 @@ section{
 .recipe-description {
     width: 100%;
 }
+
+.recipe-description{
+    padding: 40px;
+    width: inherit;
+}
+
+.comments_section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    width: inherit;
+}
+
+
+/* RECIPE SITE*********************STOP*/
+
+/* CALENDAR START----------------------------------*/
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
@@ -230,6 +251,7 @@ body {font-family: Verdana, sans-serif;}
     color: white !important
 }
 
+/* CALENDAR ----------------------------------STOP*/
 /* tables still need 'cellspacing="0"' in the markup */
 table {
     border-collapse: separate;
