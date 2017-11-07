@@ -33,7 +33,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 header {
     padding: 1em;
-    color: gray;
+    color: #693D3D;
     background-color: whitesmoke;
     clear: left;
     text-align: left;
@@ -179,7 +179,7 @@ body {font-family: Verdana, sans-serif;}
     padding: 10px 25px;
     background: #46211A;
     text-align: center;
-    width: 84.5%;
+    width: 80%;
     margin: 0 50px;
 }
 
@@ -210,15 +210,16 @@ body {font-family: Verdana, sans-serif;}
 }
 
 /* Weekdays (Mon-Sun) */
-.weekdays {
-    margin: 0 50px;
+.weekdays { 
     padding: 10px 25px;
     background-color:#A43820;
+    width: 80%;
+    margin: 0 50px;
 }
 
 .weekdays li {
     display: inline-block;
-    width: 13%;
+    width: 13.7%;
     color: #46211A;
     text-align: center;
 }
@@ -226,16 +227,17 @@ body {font-family: Verdana, sans-serif;}
 /* Days (1-31) */
 .days {
    
-    padding: 10px 25px;
+    padding: 10px 25px;;
     background: whitesmoke;
     margin: 0 50px;
+    width: 80%;
   
 }
 
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     height: 50px;
     text-align: left;
     margin-bottom: 5px;
@@ -249,6 +251,9 @@ body {font-family: Verdana, sans-serif;}
     padding: 5px;
     background: #A43820;
     color: white !important
+}
+.calendPic {
+    width: 50%;
 }
 
 /* CALENDAR ----------------------------------STOP*/
