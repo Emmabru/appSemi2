@@ -86,15 +86,17 @@ ul {
 }
 
 .menu {
-    margin-left: 35%;
+    margin: auto;
     margin-top: 3%;
     float: left;
     display: block;
     color: white;
     text-align: center;
 }
+
+/* Bygg om till responsive
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive */
 .menu a{
-    float: left;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -116,14 +118,15 @@ li a:hover:not(.active) {
 
 
 section{
-    margin-left: 10%;
-    margin-top: 140px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
     margin-right: 10%;
-    padding: 1em;
+    padding: 2%;
     overflow: hidden;
     background-color:  white;
-    border: 2px solid #A43820;
-    border-radius: 10px;
+    border: 3px solid #A43820;
+    border-radius: 30px;
     text-align: justify;
 }
 
@@ -172,7 +175,11 @@ section{
 
 /* CALENDAR START----------------------------------*/
 ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
+
+.calDesc {
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 /* Month header */
 .month {
@@ -180,7 +187,7 @@ body {font-family: Verdana, sans-serif;}
     background: #46211A;
     text-align: center;
     width: 80%;
-    margin: 0 50px;
+    margin: auto;
 }
 
 /* Month list */
@@ -209,12 +216,17 @@ body {font-family: Verdana, sans-serif;}
     padding-top: 10px;
 }
 
+/* Year-text*/
+.year {
+    font-size: 18px;   
+}
+
 /* Weekdays (Mon-Sun) */
 .weekdays { 
     padding: 10px 25px;
     background-color:#A43820;
     width: 80%;
-    margin: 0 50px;
+    margin: auto;
 }
 
 .weekdays li {
@@ -226,12 +238,10 @@ body {font-family: Verdana, sans-serif;}
 
 /* Days (1-31) */
 .days {
-   
     padding: 10px 25px;;
     background: whitesmoke;
-    margin: 0 50px;
+    margin: auto;
     width: 80%;
-  
 }
 
 .days li {
@@ -248,12 +258,15 @@ body {font-family: Verdana, sans-serif;}
 
 /* Highlight the "current" day */
 .days li .active {
-    padding: 5px;
+    padding: 10%;
     background: #A43820;
     color: white !important
 }
 .calendPic {
-    width: 50%;
+    height: 60%;
+    width: auto;
+    display: flex;
+    margin-left: 10%;
 }
 
 /* CALENDAR ----------------------------------STOP*/
