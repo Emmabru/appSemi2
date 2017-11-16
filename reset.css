@@ -30,6 +30,25 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 :focus {
     outline: 0;
 }
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
 
 header {
     padding: 1em;
@@ -86,19 +105,20 @@ ul {
 }
 
 .menu {
-    margin: auto;
+    margin: 0 auto;
     margin-top: 3%;
     float: left;
     display: block;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 /* Bygg om till responsive
 https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive */
 .menu a{
     color: white;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
 }
 .menu li {
@@ -270,22 +290,24 @@ ul {list-style-type: none;}
 }
 
 /* CALENDAR ----------------------------------STOP*/
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-    border-collapse: separate;
-    border-spacing: 0;
+
+/*login..........................................START*/
+form h3 {
+    text-align: center;
 }
 
-caption, th, td {
-    text-align: left;
-    font-weight: normal;
+input[type=submit] {
+    font-family: quicksand;
+    background-color: #BA5536;
+    width: 10%;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    
 }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: "";
-}
-
-blockquote, q {
-    quotes: "" "";
+input[type=submit]:hover {
+    background-color: #A43820;
+    color: white;
 }
