@@ -99,8 +99,10 @@
 	 				It was an ok recipe. I made a double batch so just doubled all listed ingredients. I used nut milk instead of cow’s milk. They were fluffy but bland tasting. Would try again with some extra oomph added in ingredients.
 	 			</div>
 	 	</div>
-
-
+	 	<form action="/recipe.html">
+		  <?php echo $_SESSION['login_user']; ?><br>
+		  <input type="text" name="user_comment" value="Write your comment here"><br><br>
+		  <input type="submit" value="Submit">
 	</div>
 </section>
 

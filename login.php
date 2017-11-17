@@ -30,8 +30,8 @@
 		
       if($count == 1) {
          //session_register("myusername");
-         //$_SESSION['login_user'] = $myusername;
-         $_SESSION['username'] = $username;
+         $_SESSION['login_user'] = $myusername;
+         //$_SESSION['username'] = $username;
          header("location: index.html");
       }else {
          echo "Your Login Name or Password is invalid";
