@@ -20,7 +20,7 @@
 	  <li><a href="recipe.html">Pancakes</a></li>
 	  <li><a href="recipe2.html">Meatballs</a></li>
 	  <li><a href="calendar.html">Calendar</a></li>
-	  <li><a class="active" href="login-page.html">Login</a></li>
+	  <li><a class="active" href="login-page.php">Login</a></li>
 	</ul>
 	</nav>
 

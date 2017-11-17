@@ -1,3 +1,7 @@
+
+<?php
+ session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,7 +21,20 @@
 	  <li><a class="active" href="recipe.html">Pancakes</a></li>
 	  <li><a href="recipe2.html">Meatballs</a></li>
 	  <li><a href="calendar.html">Calendar</a></li>
-	  <li><a href="login-page.php">Login</a></li>
+
+	  <li>
+	  	<?php
+	  	session_start();
+	  	echo "$username";
+		  if(isset($_SESSION['username'])) {
+		    ?>
+		    <a> You're in!</a></li>
+		    <?php
+		    } else {
+		    ?>
+		    <a href="login-page.php">Login</a></li>
+		    
+		    
 	</ul>
 	</nav>
 
