@@ -1,8 +1,14 @@
-
 <?php
- session_start();
+
+session_start();
+if (!isset($_SESSION['username']) || empty($_SESSION['username'])) {
+      // redirect to your login page
+      $name='Login';
+}
+
+$name = $_SESSION['username'];
+
 ?>
-<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -22,17 +28,7 @@
 	  <li><a href="recipe2.html">Meatballs</a></li>
 	  <li><a href="calendar.html">Calendar</a></li>
 
-	  <li>
-	  	<?php
-	  	session_start();
-	  	echo "$username";
-		  if(isset($_SESSION['username'])) {
-		    ?>
-		    <a> You're in!</a></li>
-		    <?php
-		    } else {
-		    ?>
-		    <a href="login-page.php">Login</a></li>
+	  <li> <a href="login-page.php"> <?php echo $name; ?> </a></li>
 		    
 		    
 	</ul>
@@ -92,17 +88,24 @@
 	 			</div>
 	 		
 	 			<div class="comment_item_head">
-		 			<div class="comment_item_name">Pappa</div>
-		 			<div class="comment_item_date">2017-11-12</div>
+		 			<div class="comment_item_name">Emma</div>
+		 			<input type="submit" value="Delete" class="delete">
 	 			</div>
 	 			<div class="comment_item_body">
-	 				It was an ok recipe. I made a double batch so just doubled all listed ingredients. I used nut milk instead of cow’s milk. They were fluffy but bland tasting. Would try again with some extra oomph added in ingredients.
+	 				Kaksmulan.
 	 			</div>
 	 	</div>
-	 	<form action="/recipe.html">
-		  <?php echo $_SESSION['login_user']; ?><br>
-		  <input type="text" name="user_comment" value="Write your comment here"><br><br>
-		  <input type="submit" value="Submit">
+	 	<div class="comment_new">
+	 		 <?php
+			
+				echo  $_SESSION['username'];
+			?> <br>
+		 	<form action="addComment.php" method="post">
+			  <input type="hidden" name="username" value='<?php echo $_SESSION['username']; ?>' '/>
+			  <input type="text" name="user_comment" value="Write your comment here"><br><br>
+			  <input type="submit" value="Submit">
+			</form>
+		</div>
 	</div>
 </section>
 
