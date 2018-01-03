@@ -1,10 +1,3 @@
-<?php
-   
-   	session_start();
-   	include("dbconfig.php");
-   	check_logged(); /// function checks if visitor is logged. 
-
- ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,18 +10,9 @@
 <body>
 <h1>Tasty recipe</h1>
 <p> All in one bite</p>
-<div class="menu">
-	<nav>
-	 <ul>
-	  <li><a href="index.html">Home</a></li>
-	  <li><a href="recipe.html">Pancakes</a></li>
-	  <li><a class="active" href="recipe2.html">Meatballs</a></li>
-	  <li><a href="calendar.html">Calendar</a></li>
-	  <li><a href="login-page.php">Login</a></li>
-	</ul>
-	</nav>
-
-</div>
+<?php
+   include 'navigation.php';
+?>
 
 
 <section class="recipe">
