@@ -20,15 +20,18 @@ include 'dbconfig.php';
 	            while($row= mysqli_fetch_assoc($result)){
 	             array_push($list_of_comments, $row);
 
+	             echo  "</br> ";
+
 	             echo $row['username']. " --> ";
 	             echo $row['comment'];
 	             	if (isset($_SESSION['user']) and $_SESSION['user'] == $row['username']) {
 	             	echo " 
-	             		<form class='delete-form' action= 'deletecomments.php' method='POST' >
-							<input type='hidden' name='cid' value='".$row['idcomments']."'>
-							<button type='submit' name=commentDelete>Delete</button>
+	             		<form class='delete-form' action= 'deleteComments.php' method='POST' >
+							<input type='hidden' name='idcomments' value='".$row['idcomments']."'>
+							<button class='delete' type='submit' name=commentDelete>Delete</button>
 						</form>";
+
 	            	}
-	        	echo  "</br> ";
+	        	
 	        	}
 	    }
