@@ -1,12 +1,6 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['username']) || empty($_SESSION['username'])) {
-      // redirect to your login page
-      $name='Login';
-}
-
-$name = $_SESSION['username'];
 
 ?>
 <html lang="en">
@@ -64,7 +58,34 @@ $name = $_SESSION['username'];
 	</div>
 
 	<div class="comments_section">
+
+
+
+	
+
+
+
 	 	<h3>Comments</h3>
+			<div class="comment_new">
+		 		 <?php
+		 		 if (isset($_SESSION['user'])) {
+				
+				
+				echo "<br>
+			 	<form action='addComment.php' method='post'>
+				  <input type='hidden' name='username' value=" .
+				  $_SESSION['user']. " />
+				  <input type='text' name='user_comment' value='Write your comment here'><br><br>
+				  <input type='submit' value='Submit'>
+				</form>";
+				
+			} else {
+				echo "Youre not logged in";
+			} ?>
+
+			<br><br>
+			</div>
+
 	 	<div class="comment">
 	 		<div class="comment_item_head">
 		 			<div class="comment_item_name">Mamma</div>
@@ -82,18 +103,9 @@ $name = $_SESSION['username'];
 	 				Kaksmulan.
 	 			</div>
 	 	</div>
-	 	<div class="comment_new">
-	 		 <?php
-			
-				echo  $_SESSION['username'];
-			?> <br>
-		 	<form action="addComment.php" method="post">
-			  <input type="hidden" name="username" value='<?php echo $_SESSION['username']; ?>' '/>
-			  <input type="text" name="user_comment" value="Write your comment here"><br><br>
-			  <input type="submit" value="Submit">
-			</form>
-		</div>
-	</div>
+
+
+
 </section>
 
 </body>

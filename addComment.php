@@ -14,9 +14,9 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       
    	  //$comment = 'kaksmulan';
-      $user = 'emma';
+      //$user = 'emma';
       
-      $sql = "INSERT INTO comment (id_recipe, commentid, username, textbox) VALUES (1, 5, ".$_POST["username"].", ".$_POST["user_comment"].")";
+      $sql = "INSERT INTO comment (id_recipe, commentid, username, textbox) VALUES (1, 5, ".$_POST['username'].", ".$_POST["user_comment"].")";
 
       // Test of sql query
       echo $sql . "<br>";
