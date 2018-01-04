@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+$recipe = 1;
 ?>
 <html lang="en">
 <head>
@@ -87,21 +87,11 @@ session_start();
 			</div>
 
 	 	<div class="comment">
-	 		<div class="comment_item_head">
-		 			<div class="comment_item_name">Mamma</div>
-		 			<div class="comment_item_date">2017-11-11</div>
-	 			</div>
-	 			<div class="comment_item_head">
-	 				So delicious thick and fluffy! Will be making these again!
-	 			</div>
-	 		
-	 			<div class="comment_item_head">
-		 			<div class="comment_item_name">Emma</div>
-		 			<input type="submit" value="Delete" class="delete">
-	 			</div>
-	 			<div class="comment_item_body">
-	 				Kaksmulan.
-	 			</div>
+
+
+	 			<?php
+  					 include 'getComments.php';
+				?>
 	 	</div>
 
 
